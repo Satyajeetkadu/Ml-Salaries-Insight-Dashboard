@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import SalaryTable from './components/SalaryTable';
+import Chat from './components/Chat';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>ML Engineer Salaries Dashboard</h1>
       </header>
+      <main className="App-main">
+        <SalaryTable />
+        <Chat />
+      </main>
     </div>
   );
-}
+};
 
 export default App;

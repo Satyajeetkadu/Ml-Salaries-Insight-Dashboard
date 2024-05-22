@@ -10,9 +10,17 @@
     "@types/node": "^16.18.97",
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
+    "antd": "^5.17.3",
+    "axios": "^1.7.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "openai": "^4.47.1",
+    "papaparse": "^5.4.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
+    "recharts": "^2.12.7",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
@@ -20,7 +28,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start-server": "node server.js"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +48,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/csv-parse": "^1.2.2",
+    "@types/papaparse": "^5.3.14"
   }
 }
